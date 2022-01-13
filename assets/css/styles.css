@@ -1,5 +1,6 @@
 :root {
     --primary-color: rgb(52,56,64);
+    --Mont: 'Montserrat', sans-serif;
 }
 * {
     margin: 0;
@@ -19,6 +20,9 @@ main {
 .container {
     max-width: 1460px;
     width: 100%;
+}
+.container-padding {
+    padding: 0 30px;
 }
 /* start header styles */
 header {
@@ -82,7 +86,7 @@ nav a,
     margin-left: -8px;
 }
 .hero-content h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--Mont);
     font-size: 80px;
     font-weight: 400;
     color: white;
@@ -92,7 +96,7 @@ nav a,
     margin-bottom: 10px;
 }
 .hero-content h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--Mont);
     font-size: 26px;
     font-weight: 400;
     color: white;
@@ -113,9 +117,6 @@ nav a,
 /* start hero section styles */
 
 /* start row styles */
-.kick-off {
-    margin-top: 80px;
-}
 .row {
     display: flex;
     width: 100%;
@@ -149,7 +150,7 @@ nav a,
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
 .column-content-box h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--Mont);
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
@@ -178,3 +179,48 @@ nav a,
     text-decoration: none;
 }
 /* end row styles */
+
+/* start section title styles */
+.section-container {
+    width: 1460px;
+}
+.section-title-row {
+    display: flex;
+}
+.section-title {
+    padding-left: 150px;
+    width: 400px;
+}
+.section-title h1 {
+    font-family: var(--Mont);
+    font-size: 94px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.section-title-info {
+    padding-left: 80px;
+    width: 770px;
+}
+.section-title-info p {
+    font-size: 16px;
+    margin: 18px 0;
+}
+.section-title-info p span{
+    font-weight: 700;
+}
+.section-title-info a {
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+/* end section styles */
+
+/* kick off section */
+.kick-off-section {
+    margin-top: 80px;
+}
+/* stay section */
+.stay-section {
+    margin: 70px 0 30px 0;
+}
