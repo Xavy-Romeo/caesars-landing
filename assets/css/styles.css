@@ -70,6 +70,7 @@ nav a,
     text-align: center;
 }
 /* end header styles */
+
 /* start hero section styles */
 .hero {
     background-image: url('../images/hero.jpg');
@@ -222,11 +223,18 @@ nav a,
 }
 /* end section styles */
 
-/* start kick off section */
+/* start kick off, miracle mile section */
 .kick-off {
     margin-top: 80px;
 }
-/* end kick off section */
+.miracle {
+    margin-top: 30px;
+}
+.miracle img {
+    height: 240px;
+    object-fit: cover;
+}
+/* end kick off, miracle mile section */
 
 /* start hotel section */
 .hotel { 
@@ -377,31 +385,36 @@ nav a,
 }
 /* end hotel section */
 
-/* start gordon section */
-.gordon {
+/* start gordon, forum section */
+.gordon,
+.forum {
     position: relative;
 }
-.gordon-container {
+.gordon-container,
+.forum-container {
     background: rgb(35,36,43);
     height: 420px;
     width: 100%;
     color: var(--white90);
     padding: 90px 0 90px 120px;
 }
-.gordon-container h3 {
+.gordon-container h3,
+.forum-container h3 {
     font-family: var(--Mont);
     font-size: 36px;
     font-weight: 600;
     text-transform: uppercase;
 }
-.gordon-container p {
+.gordon-container p,
+.forum-container p {
     width: 550px;
     margin: 25px 0 40px 0;
 }
-.gordon-container a {
+.gordon-container a,
+.forum-container a {
     background: var(--white90);
     color: rgb(35,36,43);
-    padding: 8px 16px;
+    padding: 8px 18px;
     border-radius: 4px;
     text-transform: uppercase;
     text-decoration: none;
@@ -409,12 +422,17 @@ nav a,
     font-weight: 600;
     letter-spacing: 1px;
 }
-.gordon-img {
+.discover {
+    padding: 8px 30px !important;
+}
+.gordon-img,
+.forum-img {
     position: absolute;
     right: 35px;
     bottom: -20px;
 }
-.gordon-img img {
+.gordon-img img,
+.forum-img img {
     width: 100%;
     height: 100%
 }
