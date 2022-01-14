@@ -562,3 +562,41 @@ nav a,
     overflow-x: hidden;
 }
 /* end adele section */
+
+/* start wheel section */
+.wheel-nav {
+    margin: 30px 0;
+}
+.wheel-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wheel-nav ul li {
+    list-style-type: none;
+    padding: 0 16px;
+}
+.wheel-nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 5px;
+    transition: border .1s ease-in-out;
+}
+.wheel-nav ul li a.celebrity {
+    border-bottom: 3px solid rgb(35,36,43);
+}
+.wheel-nav ul li a:hover {
+    border-bottom: 3px solid rgb(35,36,43);
+}
+.wheel-main-container {
+    display: flex;
+    position: relative;
+}
+.wheel-img {
+    height: 608px;
+}
+/* end wheel section */
