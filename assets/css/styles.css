@@ -70,6 +70,7 @@ nav a,
     text-align: center;
 }
 /* end header styles */
+
 /* start hero section styles */
 .hero {
     background-image: url('../images/hero.jpg');
@@ -184,6 +185,9 @@ nav a,
 /* end row styles */
 
 /* start section title styles */
+.stay, .eat, .see, .shop, .play {
+    margin: 70px 0 30px 0;
+}
 .section-container {
     width: 1460px;
 }
@@ -219,17 +223,18 @@ nav a,
 }
 /* end section styles */
 
-/* start kick off section */
+/* start kick off, miracle mile section */
 .kick-off {
     margin-top: 80px;
 }
-/* end kick off section */
-
-/* start stay section */
-.stay {
-    margin: 70px 0 30px 0;
+.miracle {
+    margin-top: 30px;
 }
-/* end stay section */
+.miracle img {
+    height: 240px;
+    object-fit: cover;
+}
+/* end kick off, miracle mile section */
 
 /* start hotel section */
 .hotel { 
@@ -379,3 +384,219 @@ nav a,
     width: 100%;
 }
 /* end hotel section */
+
+/* start gordon, forum section */
+.gordon,
+.forum {
+    position: relative;
+}
+.gordon-container,
+.forum-container {
+    background: rgb(35,36,43);
+    height: 420px;
+    width: 100%;
+    color: var(--white90);
+    padding: 90px 0 90px 120px;
+}
+.gordon-container h3,
+.forum-container h3 {
+    font-family: var(--Mont);
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.gordon-container p,
+.forum-container p {
+    width: 550px;
+    margin: 25px 0 40px 0;
+}
+.gordon-container a,
+.forum-container a {
+    background: var(--white90);
+    color: rgb(35,36,43);
+    padding: 8px 18px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.discover {
+    padding: 8px 30px !important;
+}
+.gordon-img,
+.forum-img {
+    position: absolute;
+    right: 35px;
+    bottom: -20px;
+}
+.gordon-img img,
+.forum-img img {
+    width: 100%;
+    height: 100%
+}
+/* end gordon section */
+
+/* start chef section */
+.chef-nav {
+    margin: 30px 0;
+}
+.chef-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chef-nav ul li {
+    list-style-type: none;
+    padding: 0 16px;
+}
+.chef-nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 5px;
+    transition: border .1s ease-in-out;
+}
+.chef-nav ul li a.celebrity {
+    border-bottom: 3px solid rgb(35,36,43);
+}
+.chef-nav ul li a:hover {
+    border-bottom: 3px solid rgb(35,36,43);
+}
+.chef .column-content-box {
+    height: 240px;
+}
+.food-genre {
+    display: flex;
+    justify-content: space-between;
+}
+.food-genre h5 {
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+/* end chef section */
+
+/* start adele section */
+.adele { 
+    position: relative;
+    display: flex;
+}
+.adele-container {
+    margin-right: 30px;
+}
+.adele-img-container {
+    padding-left: 15px;
+    z-index: -1;
+}
+.adele-img-container img {
+    width: 1080px;
+    object-fit: cover;
+    z-index: -1;
+}
+.adele-content-container{
+    position: absolute;
+    display: flex;
+    background: white;
+    height: 190px;
+    width: 685px;
+    margin-top: -175px;
+    z-index: 10;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 10px 10px -5px rgba(0,0,0,.06);
+}
+.adele-content {
+    position: relative;
+    padding: 16px;
+}
+.adele-name-container {
+    width: 653px;
+}
+.adele-name-container h4 {
+    font-family: var(--Mont);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.adele-name-container span {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-gray);
+}
+.adele-name-container p {
+    margin-top: 15px;
+}
+.learn-more-btn {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    min-width: 133px;
+    background: var(--black20);
+    color: var(--white90);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.adele-two {
+    overflow-x: hidden;
+}
+.adele-two-content-container {
+    position: absolute;
+}
+.adele2-content-container {
+    display: flex;
+    background: white;
+    height: 190px;
+    margin-top: -175px;
+    z-index: 10;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 10px 10px -5px rgba(0,0,0,.06);
+    width: 275px;
+    overflow-x: hidden;
+}
+/* end adele section */
+
+/* start wheel section */
+.wheel-nav {
+    margin: 30px 0;
+}
+.wheel-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wheel-nav ul li {
+    list-style-type: none;
+    padding: 0 16px;
+}
+.wheel-nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 5px;
+    transition: border .1s ease-in-out;
+}
+.wheel-nav ul li a.celebrity {
+    border-bottom: 3px solid rgb(35,36,43);
+}
+.wheel-nav ul li a:hover {
+    border-bottom: 3px solid rgb(35,36,43);
+}
+.wheel-main-container {
+    display: flex;
+    position: relative;
+}
+.wheel-img {
+    height: 608px;
+}
+/* end wheel section */
