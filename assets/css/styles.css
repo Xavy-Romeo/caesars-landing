@@ -108,15 +108,52 @@ nav a,
     height: 670px;
     background-repeat: no-repeat;
     background-size:cover;
+    transition: all .1s ease-in-out;
+}
+@media only screen and (max-width: 1199px) {
+    .hero {
+        background-image: url('../images/hero-mobile.jpg');
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hero {
+        height: 550px;
+    }
 }
 .hero-content {
     width: 100%;
     padding: 20px 90px;
 }
+@media only screen and (max-width: 850px) {
+    .hero-content {
+        padding: 20px 15px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hero-content {
+        padding: 100px 15px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .hero-content {
+        padding: 70px 15px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .hero-content {
+        padding: 70px 0;
+        text-align: center;
+    }
+}
 .hero-content img {
     width: 450px;
     margin-bottom: 20px;
     margin-left: -8px;
+}
+@media only screen and (max-width: 700px) {
+    .hero-content img {
+        width: 250px;
+    }
 }
 .hero-content h1 {
     font-family: var(--Mont);
@@ -128,6 +165,11 @@ nav a,
     text-shadow: 0 2px 4px rgba(0,0,0,.5);
     margin-bottom: 10px;
 }
+@media only screen and (max-width: 700px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
 .hero-content h4 {
     font-family: var(--Mont);
     font-size: 26px;
@@ -135,6 +177,14 @@ nav a,
     color: white;
     text-shadow: 0 2px 4px rgba(0,0,0,.5);
     margin-bottom: 70px;
+}
+@media only screen and (max-width: 700px) {
+    .hero-content h4 {
+        font-size: 20px;
+    }
+}
+.play-btn-container {
+    width: 100%;
 }
 .hero-content a {
     font-size: 14px;
@@ -592,6 +642,9 @@ nav a,
 /* end adele section */
 
 /* start wheel section */
+.wheel {
+    position: relative;
+}
 .wheel-nav {
     margin: 30px 0;
 }
