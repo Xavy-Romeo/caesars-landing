@@ -28,6 +28,16 @@ main {
 .container-padding {
     padding: 0 30px;
 }
+@media only screen and (max-width: 1199px) {
+    .container-padding {
+        padding: 0 15px;
+    }
+}
+@media only screen and (max-width: 699px) {
+    .container-padding {
+        padding: 0;
+    }
+}
 /* start header styles */
 header {
     position: -webkit-sticky; /* to support Safari */
@@ -203,6 +213,7 @@ nav a,
 .row {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 .row-column {
     width: 460px;
@@ -210,18 +221,54 @@ nav a,
     flex-direction: column;
     align-items: center;
 }
+@media only screen and (max-width: 1459px) {
+    .row-column {
+        width: 375px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .row-column {
+        width: 300px;
+    }
+}
 .column1 {
     margin-right: 5px;
+}
+@media only screen and (max-width: 699px) {
+    .column1 {
+        width: 100vw;
+    }
 }
 .column2 {
     margin-right: 5px;
     margin-left: 5px;
 }
+@media only screen and (max-width: 699px) {
+    .column2 {
+        display: none;
+    }
+}
 .column3 {
     margin-left: 5px;
 }
+@media only screen and (max-width: 969px) {
+    .column3 {
+        display: none;
+    }
+}
 .row-column img {
     width: 100%;
+    object-fit: cover;
+}
+@media only screen and (max-width: 1199px) {
+    .row-column img {
+        height: 210px;
+    }
+}
+@media only screen and (max-width: 699px) {
+    .row-column img {
+        height: 100%;
+    }
 }
 .column-content-box {
     position: relative;
@@ -231,19 +278,31 @@ nav a,
     background: white;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
 }
+@media only screen and (max-width: 699px) {
+    .column-content-box {
+        width: 100%;
+        margin: -40px 0 0 0;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .column-content-box {
+        height: 280px;
+    }
+}
 .column-content-box h4 {
     font-family: var(--Mont);
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
 }
-.column-content-box span {
+.column-span {
     font-size: 12px;
     font-weight: 700;
     color: var(--text-gray);
 }
 .column-content-box p {
     margin-top: 20px;
+    display: inline-block;
 }
 .column-content-box a {
     position: absolute;
@@ -259,6 +318,24 @@ nav a,
     padding: 10px 16px;
     text-align: center;
     text-decoration: none;
+}
+@media only screen and (max-width: 1459px) {
+    .show1460 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .show1200 {
+        display: none;
+    }
+}
+.more {
+    font-weight: 600;
+}
+@media only screen and (min-width: 1460px) {
+    .more {
+        display: none;
+    }
 }
 /* end row styles */
 
@@ -304,6 +381,11 @@ nav a,
 /* start kick off, miracle mile section */
 .kick-off {
     margin-top: 80px;
+}
+@media only screen and (max-width: 969px) {
+    .kick-off {
+        margin-top: 35px;
+    }
 }
 .miracle {
     margin-top: 30px;
