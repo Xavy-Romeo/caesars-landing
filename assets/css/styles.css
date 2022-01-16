@@ -791,15 +791,48 @@ nav a,
 /* start gordon, forum section */
 .gordon,
 .forum {
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 .gordon-container,
 .forum-container {
+    position: relative;
     background: rgb(35,36,43);
     height: 420px;
     width: 100%;
     color: var(--white90);
     padding: 90px 0 90px 120px;
+}
+@media only screen and (max-width: 1459px) {
+    .gordon-container,
+    .forum-container {
+        height: 320px;
+        width: 1140px;
+        padding: 32px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .gordon-container,
+    .forum-container {
+        height: 330px;
+        width: 930px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .gordon-container,
+    .forum-container {
+        height: 395px;
+        width: 736px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .gordon-container,
+    .forum-container {
+        height: 100%;
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
 }
 .gordon-container h3,
 .forum-container h3 {
@@ -808,10 +841,61 @@ nav a,
     font-weight: 600;
     text-transform: uppercase;
 }
+@media only screen and (max-width: 1000px) {
+    .gordon-container h3,
+    .forum-container h3 {
+        width: 288px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .gordon-container h3,
+    .forum-container h3 {
+        display: none;
+    }
+}
+.gordon-container h6,
+.forum-container h6 {
+    font-family: var(--Mont);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+@media only screen and (min-width: 900px) {
+    .gordon-container h6,
+    .forum-container h6 {
+        display: none;
+    }
+}
 .gordon-container p,
 .forum-container p {
-    width: 550px;
+    width: 540px;
     margin: 25px 0 40px 0;
+}
+@media only screen and (max-width: 1459px) {
+    .gordon-container p,
+    .forum-container p {
+        width: 490px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .gordon-container p,
+    .forum-container p {
+        width: 390px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .gordon-container p,
+    .forum-container p {
+        width: 288px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .gordon-container p,
+    .forum-container p {
+        width: 100%;
+    }
 }
 .gordon-container a,
 .forum-container a {
@@ -833,11 +917,53 @@ nav a,
     position: absolute;
     right: 35px;
     bottom: -20px;
+    z-index: 999;
+}
+@media only screen and (max-width: 1459px) {
+    .gordon-img,
+    .forum-img {    
+        height: 320px;
+        width: 570px;
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .gordon-img,
+    .forum-img {    
+        height: 260px;
+        width: 464px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .gordon-img,
+    .forum-img {    
+        height: 206px;
+        width: 368px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .gordon-img,
+    .forum-img {    
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        right: 0;
+        bottom: 0;
+    }
 }
 .gordon-img img,
 .forum-img img {
     width: 100%;
     height: 100%
+}
+@media only screen and (max-width: 900px) {
+    .gordon-img img,
+    .forum-img img {    
+        max-height: 386px;
+        max-width: 688px;
+    }
 }
 /* end gordon section */
 
