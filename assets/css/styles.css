@@ -38,11 +38,11 @@ main {
         padding: 0 15px;
     }
 }
-@media only screen and (max-width: 699px) {
+/* @media only screen and (max-width: 699px) {
     .container-padding {
         padding: 0;
     }
-}
+} */
 /* start header styles */
 header {
     position: -webkit-sticky; /* to support Safari */
@@ -242,7 +242,7 @@ nav a,
 @media only screen and (max-width: 699px) {
     .column1 {
         width: calc(100vw - 30px);
-        padding: 0 15px;
+        /* padding: 0 15px; */
     }
 }
 .column2 {
@@ -395,6 +395,11 @@ nav a,
         margin-right: -300px;
     }
 }
+@media only screen and (max-width: 599px) {
+    .section-title {
+        padding-left: 0px;
+    }
+}
 .section-title h1 {
     font-family: var(--Mont);
     font-size: 94px;
@@ -515,12 +520,33 @@ nav a,
 .hotel { 
     position: relative;
     display: flex;
+    justify-content: center;
 }
 .hotel-one {
     margin-right: 30px;
 }
+@media only screen and (max-width: 1000px) {
+    .hotel-one {
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .hotel-one {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .hotel-one {
+        width: 100%;
+    }
+}
 .hotel-two {
     overflow-x: hidden;
+}
+@media only screen and (max-width: 900px) {
+    .hotel-two {
+        display: none;
+    }
 }
 .vid-container {
     z-index: -1;
@@ -528,12 +554,60 @@ nav a,
     background-size: cover;
     padding-left: 15px;
 }
+@media only screen and (max-width: 1000px) {
+    .vid-container {
+        padding-left: 0;
+    }
+}
 .vid-container video {
-    width: 1150px;
+    width: 1080px;
     z-index: -1;
+}
+@media only screen and (max-width: 1459px) {
+    .vid-container video {
+        width: 870px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .vid-container video {
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .vid-container video {
+        height: 100%;
+        width: 100%;
+    }
 }
 .flamingo-container {
     padding-left: 15px;
+}
+/* @media only screen and (max-width: 1000px) {
+    .flamingo-container {
+        padding-left: 0;
+    }
+} */
+.flamingo-container img {
+    height: 607.5px;
+    width: 260px;
+    object-fit: cover;
+}
+@media only screen and (max-width: 1459px) {
+    .flamingo-container img {
+        height: 490px;
+        width: 260px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .flamingo-container img {
+        height: 450px;
+        width: 65px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .flamingo-container img {
+        width: 25px;
+    }
 }
 .hotel-content-container {
     position: absolute;
@@ -543,6 +617,44 @@ nav a,
     margin-top: -160px;
     z-index: 10;
     box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 10px 10px -5px rgba(0,0,0,.06);
+}
+@media only screen and (max-width: 1459px) {
+    .hotel-content-container {
+        width: 525px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .hotel-content-container {
+        display: none;
+    }
+}
+.hotel-content-mobile {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    height: 85px;
+    padding: 15px;
+    z-index: 10;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 10px 10px -5px rgba(0,0,0,.06);
+}
+.hotel-content-mobile h6 {
+    font-family: var(--Mont);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.hotel-content-mobile h2 {
+    font-size: 26px !important;
+}
+.hotel-content-mobile p {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+@media only screen and (min-width: 1000px) {
+    .hotel-content-mobile {
+        display: none;
+    }
 }
 .hotel-two-content-container {
     position: absolute;
@@ -554,8 +666,18 @@ nav a,
     margin-top: -160px;
     z-index: 10;
     box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 10px 10px -5px rgba(0,0,0,.06);
-    width: 205px;
+    width: 275px;
     overflow-x: hidden;
+}
+@media only screen and (max-width: 1279px) {
+    .flamingo-content-container {
+        width: 80px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .flamingo-content-container {
+        display: none;
+    }
 }
 .palace-logo {
     background: var(--black20);
@@ -582,6 +704,11 @@ nav a,
 .hotel-name-container {
     width: 415px;
 }
+@media only screen and (max-width: 1459px) {
+    .hotel-name-container  {
+        width: 260px;
+    }
+}
 .hotel-name-container h4 {
     font-family: var(--Mont);
     font-size: 22px;
@@ -591,8 +718,9 @@ nav a,
 .hotel-name-container p {
     margin-top: 25px;
 }
-.hotel-name-container p span {
+.hotel-name-container p .more {
     font-weight: 600;
+    display: inline-block;
 }
 .book-now-btn {
     position: absolute;
