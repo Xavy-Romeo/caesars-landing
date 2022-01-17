@@ -533,10 +533,6 @@ nav a,
 @media only screen and (max-width: 900px) {
     .hotel-one {
         margin-right: 0;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .hotel-one {
         width: 100%;
     }
 }
@@ -582,11 +578,6 @@ nav a,
 .flamingo-container {
     padding-left: 15px;
 }
-/* @media only screen and (max-width: 1000px) {
-    .flamingo-container {
-        padding-left: 0;
-    }
-} */
 .flamingo-container img {
     height: 607.5px;
     width: 260px;
@@ -621,6 +612,11 @@ nav a,
 @media only screen and (max-width: 1459px) {
     .hotel-content-container {
         width: 525px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .hotel-content-container {
+        margin-top: -140px;
     }
 }
 @media only screen and (max-width: 1000px) {
@@ -672,6 +668,7 @@ nav a,
 @media only screen and (max-width: 1279px) {
     .flamingo-content-container {
         width: 80px;
+        margin-top: -140px;
     }
 }
 @media only screen and (max-width: 1000px) {
@@ -1014,18 +1011,51 @@ nav a,
 .adele { 
     position: relative;
     display: flex;
+    justify-content: center;
 }
 .adele-container {
     margin-right: 30px;
+}
+@media only screen and (max-width: 1000px) {
+    .adele-container {
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .adele-container {
+        margin-right: 0;
+        width: 100%;
+    }
 }
 .adele-img-container {
     padding-left: 15px;
     z-index: -1;
 }
+@media only screen and (max-width: 1000px) {
+    .adele-img-container {
+        padding-left: 0;
+    }
+}
 .adele-img-container img {
     width: 1080px;
     object-fit: cover;
     z-index: -1;
+}
+@media only screen and (max-width: 1459px) {
+    .adele-img-container img {
+        width: 870px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .adele-img-container img {
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .adele-img-container img {
+        height: 100%;
+        width: 100%;
+    }
 }
 .adele-content-container{
     position: absolute;
@@ -1037,12 +1067,51 @@ nav a,
     z-index: 10;
     box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 10px 10px -5px rgba(0,0,0,.06);
 }
+@media only screen and (max-width: 1459px) {
+    .adele-content-container{
+        width: 525px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .adele-content-container{
+        margin-top: -150px;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .adele-content-container{
+        display: none;
+    }
+}
+.adele-content-mobile {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    width: 100%;
+    height: 85px;
+    padding: 15px;
+    z-index: 10;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 10px 10px -5px rgba(0,0,0,.06);
+}
+.adele-content-mobile h5 {
+    font-family: var(--Mont);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.adele-content-mobile p {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: var(--text-gray);
+}
+@media only screen and (min-width: 1000px) {
+    .adele-content-mobile {
+        display: none;
+    }
+}
 .adele-content {
     position: relative;
     padding: 16px;
-}
-.adele-name-container {
-    width: 653px;
 }
 .adele-name-container h4 {
     font-family: var(--Mont);
@@ -1058,6 +1127,16 @@ nav a,
 }
 .adele-name-container p {
     margin-top: 15px;
+}
+.john-name-container,
+.linq-name-container {
+    overflow-x: hidden;
+}
+.john-name-container h4,
+.john-name-container p,
+.linq-name-container h4,
+.linq-name-container p { 
+    width: 1000px;
 }
 .learn-more-btn {
     position: absolute;
@@ -1077,6 +1156,45 @@ nav a,
 .adele-two {
     overflow-x: hidden;
 }
+@media only screen and (max-width: 900px) {
+    .adele-two {
+        display: none;
+    }
+}
+.john-img, 
+.linq-img {
+    height: 100%;
+    width: 100%;
+}
+.john-img img,
+.linq-img img {
+    object-fit: cover;
+    height: 608px;
+    width: 260px;
+}
+.linq-img img {
+    object-position: left;
+}
+@media only screen and (max-width: 1459px) {
+    .john-img img,
+    .linq-img img {
+        height: 490px;
+        width: 260px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .john-img img,
+    .linq-img img {
+        height: 450px;
+        width: 65px;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .john-img img,
+    .linq-img img {
+        width: 25px;
+    }
+}
 .adele-two-content-container {
     position: absolute;
 }
@@ -1089,6 +1207,22 @@ nav a,
     box-shadow: 0 20px 25px -5px rgba(0,0,0,.10), 0 10px 10px -5px rgba(0,0,0,.06);
     width: 275px;
     overflow-x: hidden;
+}
+@media only screen and (max-width: 1459px) {
+    .adele2-content-container {
+        width: 275px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .adele2-content-container {
+        width: 80px;
+        margin-top: -150px;
+    }
+}
+@media only screen and (max-width: 999px) {
+    .adele2-content-container {
+        display: none;
+    }
 }
 /* end adele section */
 
@@ -1108,6 +1242,21 @@ nav a,
     list-style-type: none;
     padding: 0 16px;
 }
+@media only screen and (max-width: 650px) {
+    .wheel-nav ul li {
+        padding: 0 8px;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .wheel-nav ul li {
+        padding: 0 4px;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .wheel-nav ul li {
+        padding: 0 2px;
+    }
+}
 .wheel-nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
@@ -1118,14 +1267,36 @@ nav a,
     padding: 5px;
     transition: border .1s ease-in-out;
 }
+@media only screen and (max-width: 650px) {
+    .wheel-nav ul li a {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .wheel-nav ul li a {
+        font-size: 8px;
+        letter-spacing: 0;
+    }
+}
 .wheel-nav ul li a.celebrity {
     border-bottom: 3px solid rgb(35,36,43);
+}
+@media only screen and (max-width: 510px) {
+    .wheel-nav ul li a.celebrity {
+        border-bottom: 1px solid rgb(35,36,43);
+    }
 }
 .wheel-nav ul li a:hover {
     border-bottom: 3px solid rgb(35,36,43);
 }
+@media only screen and (max-width: 510px) {
+    .wheel-nav ul li a:hover {
+        border-bottom: 1px solid rgb(35,36,43);
+    }
+}
 .wheel-main-container {
     display: flex;
+    justify-content: center;
     position: relative;
 }
 .wheel-img {
