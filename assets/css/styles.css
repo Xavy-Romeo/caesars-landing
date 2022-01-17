@@ -977,6 +977,21 @@ nav a,
     list-style-type: none;
     padding: 0 16px;
 }
+@media only screen and (max-width: 650px) {
+    .chef-nav ul li {
+        padding: 0 8px;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .chef-nav ul li {
+        padding: 0 4px;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .chef-nav ul li {
+        padding: 0 2px;
+    }
+}
 .chef-nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
@@ -987,11 +1002,32 @@ nav a,
     padding: 5px;
     transition: border .1s ease-in-out;
 }
+@media only screen and (max-width: 650px) {
+    .chef-nav ul li a {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .chef-nav ul li a {
+        font-size: 8px;
+        letter-spacing: 0;
+    }
+}
 .chef-nav ul li a.celebrity {
     border-bottom: 3px solid rgb(35,36,43);
 }
+@media only screen and (max-width: 510px) {
+    .chef-nav ul li a.celebrity {
+        border-bottom: 1px solid rgb(35,36,43);
+    }
+}
 .chef-nav ul li a:hover {
     border-bottom: 3px solid rgb(35,36,43);
+}
+@media only screen and (max-width: 510px) {
+    .chef-nav ul li a:hover {
+        border-bottom: 1px solid rgb(35,36,43);
+    }
 }
 .chef .column-content-box {
     height: 240px;
@@ -1313,12 +1349,23 @@ nav a,
     height: 410px;
     width: 100%;
 }
+@media only screen and (max-width: 1279px) {
+    .exclusive {
+        margin-top: 120px;
+    }
+}
 .exclusive-column {
     width: 466.667px;
     margin-top: -80px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+@media only screen and (max-width: 1279px) {
+    .exclusive-column {
+        width: 400px;
+        padding: 0 10px;
+    }
 }
 .exclusive-img {
     width: 287px;
@@ -1335,11 +1382,31 @@ nav a,
     font-weight: 700;
     text-transform: uppercase;
     margin: 30px 0 20px 0;
+    text-align: center;
 }
 .exclusive-column p {
     text-align: center;
     height: 40px;
     margin-bottom: 25px;
+}
+@media only screen and (max-width: 1279px) {
+    .exclusive-column p {
+        height: 60px;
+    }
+    .exclusive-one p,
+    .exclusive-three p {
+        margin-top: 27px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .exclusive-three {
+        display: none;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .exclusive-two {
+        display: none;
+    }
 }
 .exclusive-column a {
     background: var(--black20);
@@ -1358,11 +1425,21 @@ nav a,
 footer {
     width: 1460px;
 }
+@media only screen and (max-width: 999px) {
+    .footer{
+        width: 100vw;
+    }
+}
 .footer-top {
     display: flex;
     width: 100%;
     height: 250px;
     margin: 100px 0 70px 0;
+}
+@media only screen and (max-width: 999px) {
+    .footer-top {
+        margin: -30px 0 -50px 0;
+    }
 }
 .caesar-logo-footer {
     width: 20%;
@@ -1371,8 +1448,18 @@ footer {
     justify-content: center;
     align-items: center;
 }
+@media only screen and (max-width: 999px) {
+    .caesar-logo-footer {
+        width: 100%;
+    }
+}
 .caesar-logo-footer img {
     width: 100%;
+}
+@media only screen and (max-width: 999px) {
+    .caesar-logo-footer img {
+        width: 200px;
+    }
 }
 .casino-logos-container {
     display: grid;
@@ -1381,6 +1468,11 @@ footer {
     width: 80%;
     height: 100%;
     padding-left: 50px;
+}
+@media only screen and (max-width: 999px) {
+    .casino-logos-container {
+        display: none;
+    }
 }
 .casino-logo-container {
     display: flex;
@@ -1403,6 +1495,8 @@ footer {
 }
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .footer-links a {
     font-size: 12px;
@@ -1412,6 +1506,12 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 5px;
+}
+@media only screen and (max-width: 499px) {
+    .footer-links a {
+        font-size: 10px;
+        padding: 2px;
+    }
 }
 .footer-links a:hover {
     text-decoration: underline;
@@ -1423,16 +1523,31 @@ footer {
 .dont-sell p {
     font-size: 12px;
 }
+@media only screen and (max-width: 499px) {
+    .dont-sell p {
+        font-size: 10px;
+    }
+}
 .dont-sell a {
     font-size: 12px;
     margin-left: 5px;
     color: var(--primary-color);
     text-decoration: none;
 }
+@media only screen and (max-width: 499px) {
+    .dont-sell a {
+        font-size: 10px;
+    }
+}
 .dont-sell a:hover {
     text-decoration: underline;
 }
 .footer-bottom p {
     font-size: 12px;
+}
+@media only screen and (max-width: 499px) {
+    .footer-bottom p {
+        font-size: 10px;
+    }
 }
 /* end footer styles */
