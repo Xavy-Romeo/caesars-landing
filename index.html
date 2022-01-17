@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caesars Entertainment</title>
 
+    <link rel="icon" href='./assets/images/caesars-icon.png'/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,55 +18,62 @@
 <body>
     <!-- start header section-->
     <header>
-        <div class="container">
-            <div class="header-container">
-                <div class="logo">
-                    <a href='#Home'>
-                        <img src='./assets/images/logo.svg' alt='logo' />
-                    </a>
-                </div>
-                <!-- start nav bar-->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href='#Book'>
-                                Book a room
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#Deals'>
-                                Deals
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#Destinations'>
-                                Destinations
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#Groups-Meetings'>
-                                Groups & Meetings
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#Reservations'>
-                                My Reservations
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#Rewards'>
-                                My Rewards
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- end nav bar-->
-                <div class="sign-in">
-                    <a href='#Sign-In'>
-                        Sign In
-                    </a>
+        <div class='header'>
+            <div class='container'>
+                <div class='header-container'>
+                    <div class='logo'>
+                        <a href='#Home'>
+                            <img src='./assets/images/logo.svg' alt='logo' />
+                        </a>
+                    </div>
+                    <!-- start nav bar-->
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href='#Book'>
+                                    Book a room
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#Deals'>
+                                    Deals
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#Destinations'>
+                                    Destinations
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#Groups-Meetings'>
+                                    Groups & Meetings
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#Reservations'>
+                                    My Reservations
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#Rewards'>
+                                    My Rewards
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- end nav bar-->
+                    <div class="sign-in">
+                        <a href='#Sign-In'>
+                            Sign In
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class='header-mobile'>
+            <i class="fas fa-bars"></i>
+            <img src='./assets/images/logo.svg' />
+            <i class="far fa-user-circle"></i>
         </div>
     </header>
     <!-- start header section-->
@@ -72,8 +81,8 @@
     <main>
         <!-- start hero section -->
         <section class='hero'>
-            <div class="container">
-                <div class="hero-content">
+            <div class='container'>
+                <div class='hero-content'>
                     <img src='./assets/images/sportsbook-logo.png' alt='sportsbook logo'/>
                     <h1>
                         Caesars 
@@ -83,9 +92,11 @@
                     <h4>
                         The only sportsbook app with Caesars Rewards
                     </h4>
-                    <a href='#Play'>
-                        Play Now
-                    </a>
+                    <div class='play-btn-container'>
+                        <a href='#Play'>
+                            Play Now
+                        </a>
+                    </div>
                 </div>
             </div>  
         </section>
@@ -106,7 +117,7 @@
                                     <h4>
                                         2022 Kick-Off Sale
                                     </h4>
-                                    <span>
+                                    <span class='column-span'>
                                         Up to 25% off
                                     </span>
                                     <p>
@@ -123,11 +134,16 @@
                                     <h4>
                                         The Caesars Rewards App
                                     </h4>
-                                    <span>
+                                    <span class='column-span'>
                                         Download Now
                                     </span>
                                     <p>
-                                        Manage your Caesars Rewards account, get offers, and explore the possibilities with our award-winning app.
+                                        Manage your Caesars Rewards account, get offers, and
+                                        <span class='show1200'>explore the</span>
+                                        <span class='show1460'>possibilities with our award-winning app.</span>
+                                        <span class='more'>
+                                            ...more
+                                        </span>
                                     </p>
                                     <a href='#Learn'>
                                         Learn More
@@ -140,11 +156,16 @@
                                     <h4>
                                         We Are Hiring
                                     </h4>
-                                    <span>
+                                    <span class='column-span'>
                                         Join the Empire
                                     </span>
                                     <p>
-                                        You can do anything or be anything with Caesars Entertainment family of casinos, resorts, and venues. Find your next career today.
+                                        You can do anything or be anything with Caesars Entertainment
+                                        <span class='show1200'>family of casinos, resorts, and venues. Find your </span>
+                                        <span class='show1460'>next career today.</span>
+                                        <span class='more'>
+                                            ...more
+                                        </span>
                                     </p>
                                     <a href='#Careers'>
                                         Search Careers
@@ -162,6 +183,9 @@
                                 <h1>
                                     Stay
                                 </h1>
+                                <p>
+                                    An iconic vacation awaits you.
+                                </p>
                             </div>
                             <div class='section-title-info'>
                                 <p>
@@ -195,8 +219,9 @@
                                             Caesars Palace
                                         </h4>
                                         <p>
-                                            From the moment you walk through the doors of Caesars Palace, you'll understand why this
-                                            <span>
+                                            From the moment you walk through the doors of 
+                                            <span class='show1460'>Caesars Palace, you'll understand why this</span>
+                                            <span class='more'>
                                                 ...more
                                             </span>
                                         </p>  
@@ -216,6 +241,22 @@
                                         Book Now
                                     </a> 
                                 </div>
+                            </div>
+                            <div class='hotel-content-mobile'>
+                                <h6>
+                                    Caesars Palace
+                                </h6>
+                                <div class='hotel-price-container'>
+                                    <h2>
+                                        <span>
+                                            $89
+                                        </span>
+                                        $85
+                                    </h2>
+                                    <p>
+                                        Per Night
+                                    </p>
+                                </div>
                             </div> 
                         </div>
                         <div class='hotel-two'>
@@ -233,7 +274,8 @@
                                                 Flamingo Las Vegas
                                             </h4>
                                             <p>
-                                                Stay center strip at the forever fabulous Flamingo Las Vegas Hotel and Casino. Now featuring newly
+                                                Stay center strip at the forever fabulous Flamingo
+                                                <span class='show1460'>Las Vegas Hotel and Casino. Now featuring newly</span> 
                                                 <span>
                                                     ...more
                                                 </span>
@@ -274,6 +316,9 @@
                                 <h1>
                                     Eat
                                 </h1>
+                                <p>
+                                    Your ultimate food experience starts here.
+                                </p>
                             </div>
                             <div class='section-title-info'>
                                 <p>
@@ -294,20 +339,23 @@
                     <!-- start gordon section -->
                     <section class='gordon'>
                         <div class='gordon-container'>
+                            <div class='gordon-img'>
+                                <img src='./assets/images/gordon.jpg' alt='Gordon Ramsay' />
+                            </div>
                             <h3>
-                                Gordon Ramsays's 
-                                </br>
+                                Gordon Ramsay's 
+                            </br>
                                 Hell's Kitchen
                             </h3>
+                            <h6>
+                                Gordon Ramsay's Hell's Kitchen
+                            </h6>
                             <p>
                                 The heat is on at Caesars Palace with Gordon Ramsay’s Hell’s Kitchen restaurant. Inspired by the hit TV show, Hell's Kitchen puts the sin in cuisine nightly.
                             </p>
                             <a href='#Learn'>
                                 Learn More
                             </a>
-                        </div>
-                        <div class='gordon-img'>
-                            <img src='./assets/images/gordon.jpg' alt='Gordon Ramsay' />
                         </div>
                     </section>
                     <!-- start gordon section -->
@@ -431,6 +479,9 @@
                                 <h1>
                                     See
                                 </h1>
+                                <p>
+                                    The home of legendary entertainment.
+                                </p>
                             </div>
                             <div class='section-title-info'>
                                 <p>
@@ -471,16 +522,26 @@
                                         Learn More
                                     </a> 
                                 </div>
-                            </div> 
+                            </div>
+                            <div class='adele-content-mobile'>
+                                <div class='adele-mobile-container'>
+                                    <h5>
+                                        Weekends with Adele
+                                    </h5>
+                                    <p>
+                                        Caesars Palace
+                                    </p>
+                                </div>
+                            </div>  
                         </div>
                         <div class='adele-two'>
-                            <div class='adele-img-container'>
+                            <div class='adele-img-container john-img'>
                                 <img src='./assets/images/john.jpg' alt='John Legend'/>
                             </div>
                             <div class='adele-two-content-container'>
                                 <div class='adele2-content-container'>
                                     <div class='adele-content'>
-                                        <div class='adele-name-container'>
+                                        <div class='adele-name-container john-name-container'>
                                             <h4>
                                                 John Legend "Love in Las Vegas"
                                             </h4>
@@ -517,6 +578,9 @@
                                 <h1>
                                     Shop
                                 </h1>
+                                <p>
+                                    World-class shopping at its finest.
+                                </p>
                             </div>
                             <div class='section-title-info'>
                                 <p>
@@ -537,20 +601,23 @@
                     <!-- start forum section -->
                     <section class='forum'>
                         <div class='forum-container'>
+                            <div class='forum-img'>
+                                <img src='./assets/images/forum.jpg' alt='Forum Shops' />
+                            </div>
                             <h3>
                                 The Forum Shops at
                                 </br>
                                 Caesars Palace
                             </h3>
+                            <h6>
+                                The Forum Shops at Caesars Palace
+                            </h6>
                             <p>
                                 Explore "the shopping wonder of the world" with 160 shops (including the biggest fashion brands in the world), restaurants and more all set amidst stunning Roman architecture.
                             </p>
                             <a href='#Discover' class='discover'>
                                 Discover
                             </a>
-                        </div>
-                        <div class='forum-img'>
-                            <img src='./assets/images/forum.jpg' alt='Forum Shops' />
                         </div>
                     </section>
                     <!-- start forum section -->
@@ -611,6 +678,9 @@
                                 <h1>
                                     Play
                                 </h1>
+                                <p>
+                                    Let Caesars Entertainment be your playground.
+                                </p>
                             </div>
                             <div class='section-title-info'>
                                 <p>
@@ -681,16 +751,26 @@
                                             Learn More
                                         </a> 
                                     </div>
-                                </div> 
+                                </div>
+                                <div class='adele-content-mobile'>
+                                    <div class='adele-mobile-container'>
+                                        <h5>
+                                            Fly Linq Zipline
+                                        </h5>
+                                        <p>
+                                            The LINQ Promenade
+                                        </p>
+                                    </div>
+                                </div>   
                             </div>
                             <div class='adele-two'>
-                                <div class='adele-img-container'>
+                                <div class='adele-img-container linq-img'>
                                     <img src='./assets/images/zipline.jpg' alt='Linq Zipline' class='wheel-img' />
                                 </div>
                                 <div class='adele-two-content-container'>
                                     <div class='adele2-content-container'>
                                         <div class='adele-content'>
-                                            <div class='adele-name-container'>
+                                            <div class='adele-name-container linq-name-container'>
                                                 <h4>
                                                     Fly Linq Zipline
                                                 </h4>
@@ -725,7 +805,7 @@
 
         <!-- start exclusive section -->
         <section class='exclusive'>
-            <div class='exclusive-column'>
+            <div class='exclusive-column exclusive-one'>
                 <div class='exclusive-img'>
                     <img src='./assets/images/exclusive.png' alt='Ceasars Rewards ad showing 4 people having fun at a slot machine' />
                 </div>
@@ -739,7 +819,7 @@
                     Learn More
                 </a>
             </div>
-            <div class='exclusive-column'>
+            <div class='exclusive-column exclusive-two'>
                 <div class='exclusive-img'>
                     <img src='./assets/images/practice.jpg' alt='Health and Safety ad' />
                 </div>
@@ -753,7 +833,7 @@
                     Learn More
                 </a>
             </div>
-            <div class='exclusive-column'>
+            <div class='exclusive-column exclusive-three'>
                 <div class='exclusive-img'>
                     <img src='./assets/images/support.jpg' alt='5 people cupping hands together to hold a toy heart' />
                 </div>
@@ -770,216 +850,212 @@
         </section>
         <!-- end exclusive section -->
 
-        <!-- start footer section -->
-        <footer>
-            <div class='container'>
-                <div class='container-padding'>
-                    <div class='footer-top'>
-                        <div class='caesar-logo-footer'>
-                            <img src='./assets/images/caesars-logo.svg'/>
-                        </div>
-                        <div class='casino-logos-container'>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/caesars-palace' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/caesars-palace.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/caesars' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/caesars.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/eldorado-reno' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/el-dorado.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/harrahs' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/harrahs.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/horseshoe' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/horseshoe.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/tropicana' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/tropicana.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/flamingo-las-vegas' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/flamingo.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/cromwell' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/cromwell.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/ballys-las-vegas' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/ballys.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/linq' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/linq.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/paris-las-vegas' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/paris.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/planet-hollywood' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/planet-hollywood.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/rio-las-vegas' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/rio.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/harveys-tahoe' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/harveys.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/circus-circus-reno' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/circus-circus.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/silver-legacy-reno' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/silver-legacy.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.grandvictoriacasino.com/' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/grand-victoria.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.lumiereplace.com/' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/lumiere.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.fourseasons.com/stlouis/' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/four-seasons-st-louis.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.belleofbatonrouge.com/' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/belle.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/indiana-grand' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/indiana-grand.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/isle-of-capri' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/isle-capri.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.ladyluckblackhawk.com/' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/lady-luck.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/isle-casino' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/isle.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.sciotodowns.com/' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/el-dorado-gaming.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesarsrepublicscottsdale.com/' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/caesars-republic.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.wsop.com/' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/wsop.svg' />
-                                </a>
-                            </div>
-                            <div class='casino-logo-container'>
-                                <a href='https://www.caesars.com/sportsbook-and-casino' target='_blank' rel='noopener noreferrer'>
-                                    <img src='./assets/images/footer-logos/caesars-sportsbook.svg' />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='footer-bottom'>
-                        <div class='footer-links'>
-                            <a href='#About'>
-                                About Us
-                            </a>
-                            |
-                            <a href='#Contact'>
-                                Contact
-                            </a>
-                            |
-                            <a href='#Careers'>
-                                Careers
-                            </a>
-                            |
-                            <a href='#Terms'>
-                                Terms of Use
-                            </a>
-                            |
-                            <a href='#Privacy'>
-                                Privacy
-                            </a>
-                            |
-                            <a href='#Responsible'>
-                                Responsible Conduct
-                            </a>
-                            |
-                            <a href='#Accessibility'>
-                                Accessibility
-                            </a>
-                            |
-                            <a href='#Investors'>
-                                Investors
-                            </a>
-                            |
-                            <a href='#Affiliates'>
-                                Affiliates
-                            </a>
-                        </div>
-                        <div class='dont-sell'>
-                            <p>
-                                California:
-                            </p>
-                            <a href='#Dont-Sell'>
-                                Do Not Sell My Info
-                            </a>
-                        </div>
-                        <p>
-                            &copy; 2022 Caesars Entertainment. All Rights Reserved.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- start footer section -->
     </main>
+    <!-- start footer section -->
     <footer>
         <div class='container'>
-
+            <div class='container-padding'>
+                <div class='footer-top'>
+                    <div class='caesar-logo-footer'>
+                        <img src='./assets/images/caesars-logo.svg'/>
+                    </div>
+                    <div class='casino-logos-container'>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/caesars-palace' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/caesars-palace.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/caesars' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/caesars.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/eldorado-reno' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/el-dorado.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/harrahs' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/harrahs.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/horseshoe' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/horseshoe.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/tropicana' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/tropicana.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/flamingo-las-vegas' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/flamingo.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/cromwell' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/cromwell.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/ballys-las-vegas' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/ballys.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/linq' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/linq.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/paris-las-vegas' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/paris.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/planet-hollywood' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/planet-hollywood.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/rio-las-vegas' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/rio.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/harveys-tahoe' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/harveys.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/circus-circus-reno' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/circus-circus.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/silver-legacy-reno' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/silver-legacy.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.grandvictoriacasino.com/' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/grand-victoria.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.lumiereplace.com/' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/lumiere.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.fourseasons.com/stlouis/' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/four-seasons-st-louis.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.belleofbatonrouge.com/' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/belle.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/indiana-grand' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/indiana-grand.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/isle-of-capri' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/isle-capri.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.ladyluckblackhawk.com/' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/lady-luck.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/isle-casino' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/isle.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.sciotodowns.com/' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/el-dorado-gaming.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesarsrepublicscottsdale.com/' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/caesars-republic.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.wsop.com/' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/wsop.svg' />
+                            </a>
+                        </div>
+                        <div class='casino-logo-container'>
+                            <a href='https://www.caesars.com/sportsbook-and-casino' target='_blank' rel='noopener noreferrer'>
+                                <img src='./assets/images/footer-logos/caesars-sportsbook.svg' />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class='footer-bottom'>
+                    <div class='footer-links'>
+                        <a href='#About'>
+                            About Us
+                        </a>
+                        |
+                        <a href='#Contact'>
+                            Contact
+                        </a>
+                        |
+                        <a href='#Careers'>
+                            Careers
+                        </a>
+                        |
+                        <a href='#Terms'>
+                            Terms of Use
+                        </a>
+                        |
+                        <a href='#Privacy'>
+                            Privacy
+                        </a>
+                        |
+                        <a href='#Responsible'>
+                            Responsible Conduct
+                        </a>
+                        |
+                        <a href='#Accessibility'>
+                            Accessibility
+                        </a>
+                        |
+                        <a href='#Investors'>
+                            Investors
+                        </a>
+                        |
+                        <a href='#Affiliates'>
+                            Affiliates
+                        </a>
+                    </div>
+                    <div class='dont-sell'>
+                        <p>
+                            California:
+                        </p>
+                        <a href='#Dont-Sell'>
+                            Do Not Sell My Info
+                        </a>
+                    </div>
+                    <p>
+                        &copy; 2022 Caesars Entertainment. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- start footer section -->
+
 </body>
 </html>
